@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="styling.css" rel="stylesheet">
+ 
+    <title>Distance Between Cities</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <h1>Distance Between Cities</h1>
+            <p>Our App will help you to calculate distance between cities</p>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="from" class="col-xs-2 control-label">From:</label>
+                    <div class="col-xs-8">
+                        <input type="text" id="from" placeholder="origin" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="to" class="col-xs-2 control-label">To:</label>
+                    <div class="col-xs-8">
+                        <input type="text" id="to" placeholder="destination" class="form-control">
+                    </div>
+                </div>
+            </form>
+            <div class="col-sx-offset-2 col-xs-10">
+                <button class="btn btn-info btn-lg" id="submit" onclick="calcRoute();">Submit</button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="googleMap">
+                
+            </div>
+            <div id="output">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
