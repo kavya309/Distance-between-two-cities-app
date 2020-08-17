@@ -1,17 +1,16 @@
 //javascript.js
 //set map options
-            var myLatLng = {lat: 23.7957, lng: 86.4304};
+            var myLatLng = {lat: 23.5941, lng: 85.1376};
             var mapOptions = {
                 center: myLatLng,
                 zoom: 7,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-                
+                mapTypeId: google.maps.MapTypeId.ROADMAP       
             };
             
             //create map
             var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 
-//create a DirectionsService object to use the route method and get a result for our request
+            //create a DirectionsService object to use the route method and get a result for our request
             var directionsService = new google.maps.DirectionsService();
             
             //create a DirectionsRenderer object which we will use to display the route
@@ -43,7 +42,7 @@ function calcRoute(){
     }else{
         //delete route from map
         directionsDisplay.setDirections({routes: []});
-        //center map in Dhanbad
+        //center map in Patna
         map.setCenter(myLatLng);
         
         //show error message
